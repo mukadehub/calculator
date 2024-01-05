@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    background: linear-gradient(to right, rgb(175, 116, 240), rgb(255, 182, 185));
+}
+.calculator {
+    width: 300px;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 30px;
+    transform-origin: center center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(250, 157, 90);
+    border-image: initial;
+    border-radius: 20px;
+    padding: 15px;
+    background: linear-gradient(to right, rgb(252, 248, 243), rgb(255, 230, 240));
+    transition: transform 0.2s ease 0s, box-shadow 0.2s ease 0s;
+}
+  
+  #display {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 24px;
+    border: 1px solid #3498db;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  }
+  
+  button.operator {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    color: #fff;
+  }
+  
+  button.number {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+  }
+  
+  button.function {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: #fff;
+  }
+  
+  button.equal {
+    background: linear-gradient(to right, #f39c12, #d35400);
+    color: #fff;
+  }
+  
+  button.clear {
+    background: linear-gradient(to right, #95a5a6, #7f8c8d);
+    color: #fff;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #bdc3c7, #ecf0f1);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  #display {
+    width: calc(100% - 0px);
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 24px;
+    border: 1px solid #3498db;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    box-sizing: border-box; 
+  }
+    
